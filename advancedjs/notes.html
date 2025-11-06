@@ -59,7 +59,7 @@
   <p><strong>Definition:</strong> <code>fetch()</code> is used to get (or send) data from a server (like an API or file). It returns a Promise, so we can handle it using <code>.then()</code> or <code>async/await</code>.</p>
   <h4>Example: Fetch a text file</h4>
   <pre id="data">Loading data.txt content...</pre>
-  <script>
+  
     fetch('data.txt')
       .then(response => response.text())
       .then(content => {
@@ -68,7 +68,7 @@
       .catch(error => {
         document.getElementById('data').innerText = "Error loading file!";
       });
-  </script>
+  
 
   <hr>
 
